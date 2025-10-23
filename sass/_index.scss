@@ -1,0 +1,206 @@
+
+// VARIABLES GLOBALES
+$color-principal: #2c2c2c;
+$color-texto: #fff;
+$color-coral: coral;
+$fuente-principal: "Bebas Neue", sans-serif;
+
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+// RESETEO
+* {
+  padding: 0;
+  margin: 0;
+}
+
+// NAVBAR Y HEADER
+
+/* NAV */
+.nav-color {
+  background-color: $color-principal;
+
+  a {
+    color: $color-texto;
+  }
+
+  .nav-text {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+
+  .logo_header {
+    width: 80px;
+  }
+}
+
+
+/* MAIN */
+
+main {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.banner {
+    background-image: url(../media/banner.jpg);
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: $color-texto;
+    position: relative;
+    .banner-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+        max-width: 600px;
+        padding: 0 15px;
+  }
+}
+
+.title {
+        text-align: center;
+        font-family: $fuente-principal;
+        font-weight: 300;
+        text-decoration: underline;
+    }
+
+// BENEFICIOS
+
+/* BENEFICIOS */
+
+.beneficios {
+    padding: 40px 0;
+    h2 {
+        text-align: center;
+        text-decoration: underline;
+        font-family: $fuente-principal;
+        text-transform: uppercase;
+        font-weight: 350;
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    
+    .card-beneficio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        transition: transform 0.4s;
+
+        &:hover {
+        transform: scale(1.1); // efecto zoom al pasar el mouse
+        }
+
+        .beneficios_image {
+            width: 165px;
+            margin: 10px;
+        }
+  }
+}
+
+.text_beneficios {
+    background-color: $color-principal;
+    font-size: 20px;
+    margin: 15px 0;
+    text-align: center;
+    padding: 20px;
+    height: auto;
+    color: $color-texto;
+}
+
+// SECCIÓN BOTS DESTACADOS
+/* BOTS DESTACADOS */
+
+.bots {
+    .text_bots {
+        text-align: center;
+        text-decoration: underline;
+        font-family: $fuente-principal;
+        font-weight: 350;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    article {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+
+    img {
+        width: 165px;
+        margin-bottom: 10px;
+        transition: transform 0.4s;
+        
+        &:hover {
+        transform: scale(1.1); // efecto zoom al pasar el mouse
+        }
+        
+    }
+
+    h3 {
+        text-decoration: underline;
+        margin-bottom: 10px;
+        color: rgb(32, 52, 113);
+    }
+
+    .listas {
+        font-size: 17px;
+        list-style: none;
+        padding: 0;
+    }
+  }
+}
+
+// FOOTER
+
+/* FOOTER */
+footer {
+    background-color: $color-principal;
+    color: $color-texto;
+    padding: 20px 0;
+    
+    .pie {
+        text-align: center;
+        
+        p {
+            font-family: $fuente-principal;
+            font-weight: 350;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+    }
+    
+    .redes-container {
+        margin-top: 10px;
+    }
+    
+    .social {
+        a {
+            display: block;
+            text-decoration: none;
+            color: $color-texto;
+            margin-bottom: 20px;
+        
+        p:hover {
+            color: $color-coral;
+        }
+        }
+    }
+    
+    .redes {
+        width: 70px;
+        display: block;
+        margin: 0 auto;
+    }
+}

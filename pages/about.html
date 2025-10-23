@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- bs -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- SCSS -->
+    <link rel="stylesheet" href="../css/main.css">
     <title>Sobre nosotros</title>
 
     <!-- FUENTE -->
@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
+    <!-- animaciones aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Encabezado de la pagina -->
@@ -24,7 +27,7 @@
         <!-- Nav bar -->
         <nav class="navbar navbar-expand-lg nav-color navbar-dark">
             <div class="container-fluid ">
-                <a class="navbar-brand" href="#"><img class="logo_header" src="../media/12497783.png" alt=""></a>
+                <a class="navbar-brand" href="../index.html"><img class="logo_header" src="../media/12497783.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -34,10 +37,10 @@
                     <a class="nav-link nav-text" aria-current="page" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link nav-text" href="../pages/contact.html">Contacto</a>
+                    <a class="nav-link nav-text" href="./contact.html">Contacto</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link nav-text" href="">Sobre nosotros</a>
+                    <a class="nav-link nav-text" href="#">Sobre nosotros</a>
                     </li>
                 </ul>
                 </div>
@@ -51,39 +54,32 @@
         <!-- Primera fila: texto a la izquierda, imagen a la derecha -->
         <section class="row fila">
             <div class="col-12 col-md-6 contenido">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu arcu sem. Donec porta erat sed erat vestibulum commodo.</p>
-                <p>Etiam in diam commodo orci tincidunt sagittis et eu sapien. Nunc ac lacus ac justo pellentesque scelerisque.</p>
+                <p>En nuestra plataforma reunimos una selección de bots diseñados para cubrir las necesidades más comunes dentro de los negocios modernos. Cada bot fue creado con un enfoque práctico, listo para integrarse en tu flujo de trabajo y ayudarte a ahorrar tiempo, mejorar la atención al cliente y aumentar tus ventas.</p>                
             </div>
-            <div class="col-12 col-md-6 imagen">
-                <img src="../media/bot1.png" alt="Bot 1">
+            <div data-aos="fade-left" class="col-12 col-md-6 imagen">
+                <img src="../media/chatbot.webp" alt="Bot 1">
             </div>
         </section>
 
         <!-- Segunda fila: imagen a la izquierda, texto a la derecha -->
         <section class="row fila">
-            <div class="col-12 col-md-6 imagen">
-                <img src="../media/4712074.png" alt="Bot 2">
+            <div data-aos="fade-right" class="col-12 col-md-6 imagen">
+                <img src="../media/tipos.png" alt="Bot 2">
             </div>
             <div class="col-12 col-md-6 contenido">
-                <p>Aliquam tincidunt interdum sem, et laoreet augue posuere sit amet. Sed pulvinar ligula non urna lobortis, sit amet tempor massa scelerisque.</p>
-                <p>Vivamus at tellus lorem. Phasellus condimentum feugiat nisi, quis sodales metus pulvinar ut.</p>
+                <p>Entre nuestros bots destacados encontrarás soluciones para automatizar tareas repetitivas, responder consultas frecuentes, captar nuevos clientes y gestionar tus redes sociales sin esfuerzo. Además, todos los bots son totalmente personalizables, lo que te permite adaptarlos al estilo y tono de tu marca.</p>
             </div>
         </section>
 
         <!-- Tercera fila: texto a la izquierda, imagen a la derecha -->
         <section class="row fila">
             <div class="col-12 col-md-6 contenido">
-                <p>Mauris malesuada eu est et congue. Suspendisse pharetra vestibulum orci nec lacinia. In eleifend est eget lectus ultrices.</p>
+                <p>Nuestro objetivo es que no solo aprendas a usar bots, sino que entiendas su lógica y potencial, para que puedas crear tus propias automatizaciones desde cero. Cada ejemplo viene acompañado de explicaciones, casos reales de aplicación y guías paso a paso para que saques el máximo provecho de la automatización en tu negocio.</p>
             </div>
-            <div class="col-12 col-md-6 imagen">
-                <img src="../media/bot3.png" alt="Bot 3">
+            <div data-aos="fade-left" class="col-12 col-md-6 imagen">
+                <img src="../media/persona.jpg" alt="Bot 3">
             </div>
         </section>
-
-
-
-
-
         
     </main>
 
@@ -115,6 +111,9 @@
         </div>
     </footer>
     <!-- BS -->
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

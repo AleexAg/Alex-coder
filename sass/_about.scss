@@ -1,0 +1,34 @@
+// SOBRE NOSOTROS
+/* SOBRE NOSOTROS */
+@use "./index" as*;
+
+.fila {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+
+    .contenido {
+        @include flex;
+        border: 1px solid #e9d3a3;
+        border-radius: 8px;
+        background-color: #ccae772a;
+        
+        p {
+            font-size: 17px;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+    }
+    .imagen {
+        @include flex;
+
+        img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin: 0 auto;
+        }
+    }
+
+}
