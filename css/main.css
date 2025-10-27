@@ -191,6 +191,9 @@ footer .redes {
 }
 
 /* CONTACTO */
+.contacto {
+  margin: 20px;
+}
 .contacto form {
   display: flex;
   max-width: 600px;
