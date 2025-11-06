@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,10 @@
     
     <!-- SCSS -->
     <link rel="stylesheet" href="../css/main.css">
-    <title>Inicio</title>
+    <title>Contacto | Bots Automatizados</title>
+
+    <meta name="description" content="Comunicate con nosotros para adquirir bots automatizados para WhatsApp, Instagram o tu negocio. Resolvemos tus consultas y creamos soluciones a medida.">
+    <meta name="keywords" content="contacto, bots automatizados, soporte de bots, WhatsApp bot, Instagram bot">
 
     <!-- FUENTE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +28,7 @@
         <!-- Nav bar -->
         <nav class="navbar navbar-expand-lg nav-color navbar-dark">
             <div class="container-fluid ">
-                <a class="navbar-brand" href="../index.html"><img class="logo_header" src="../media/12497783.png" alt=""></a>
+                <a class="navbar-brand" href="../index.html"><img class="logo_header" src="../media/12497783.png" alt="Logo principal"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -52,28 +55,27 @@
         </section>
 
         <section class="contacto">
-            <form action="">
-                <label for="">Nombre: </label>
-                <input type="text" name="" id="nombre">
+            <form action="" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
 
-                <label for="">Apellido: </label>
-                <input type="text" name="" id="apellido">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido">
 
-                <label for="">Gmail: </label>
-                <input type="email" name="" id="email">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
 
-                <label for="">Dejanos tu mensaje: </label>
-                <textarea name="" id=""></textarea>
+                <label for="mensaje">Dejanos tu mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
 
-                <input type="submit">
+                <input type="submit" value="Enviar">
             </form>
-            
         </section>
 
         <!-- iframe -->
 
         <section class="ubic">
-            <h2>Donde nos encontramos</h2>   
+            <h2>Dónde nos encontramos</h2>   
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.022108223551!2d-58.38420342494367!3d-34.603602457490936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacf3f96517d%3A0x92a28b67b5d114d7!2sAv.%20Corrientes%201047-1079%2C%20C1035%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1757821244586!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
         </section>       
     </main>
